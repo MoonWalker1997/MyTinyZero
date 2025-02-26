@@ -16,6 +16,7 @@ actor_rollout_ref.ref.log_prob_micro_batch_size=4 \
 critic.optim.lr=1e-5 \
 critic.model.path=$BASE_MODEL \
 critic.ppo_micro_batch_size=8 \
+critic.model.enable_gradient_checkpointing=True \
 algorithm.kl_ctrl.kl_coef=0.001 \
 trainer.logger=[] \
 +trainer.val_before_train=False \
