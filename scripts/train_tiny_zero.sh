@@ -1,8 +1,8 @@
 python3 -m verl.trainer.main_ppo \
 data.train_files=$DATA_DIR/train.parquet \
 data.val_files=$DATA_DIR/test.parquet \
-data.train_batch_size=64 \
-data.val_batch_size=256 \
+data.train_batch_size=8 \
+data.val_batch_size=16 \
 data.max_prompt_length=256 \
 data.max_response_length=1024 \
 actor_rollout_ref.model.path=$BASE_MODEL \
