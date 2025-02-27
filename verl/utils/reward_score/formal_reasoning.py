@@ -172,7 +172,10 @@ def compute_score(solution_str, ground_truth):
         r -= 0.4 * len(A) + 0.4 * len(C)
         rs.append(r)
 
-    return sum(rs) / len(rs)
+    if rs:
+        return sum(rs) / len(rs)
+    else:
+        return 0
 
 
 if __name__ == "__main__":
